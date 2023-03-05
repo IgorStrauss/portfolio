@@ -1,13 +1,21 @@
-from flask import Flask, jsonify
-import os
+from flask import Flask, render_template, url_for, abort
+from datetime import date
 
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route("/")
 def index():
-    return jsonify({"Choo Choo": "Welcome to your Flask app 🚅"})
+    return render_template("index.html") 
 
+@app.route("/sobre")
+def sobre():
+    return render_template("about.html")
+
+
+@app.route("/certificacoes")
+def certificacoes():
+    return render_template("post.html")
 
 if __name__ == '__main__':
-    app.run(debug=True, port=os.getenv("PORT", default=5000))
+    app.run(debug=False)

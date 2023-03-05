@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Maig | Certificados</title>
+        <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='assets/favicon.ico')}} " />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href=" {{url_for('static', filename='css/styles.css')}} " rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="{{url_for('index')}}">Marques Igor</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{url_for('index')}}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{url_for('sobre')}}">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{url_for('certificacoes')}}">Certificações</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('static/assets/img/image-post-06.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <!--
+                            <h1>Man must explore, and this is exploration at its greatest</h1>
+                            <h2 class="subheading">Problems look mighty small from 150 miles up</h2>
+                            <span class="meta">
+                                Posted by
+                                <a href="#!">Start Bootstrap</a>
+                                on August 24, 2022
+                            </span>
+                        -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                       
+                        <br>
+                        <h2 class="section-heading">Python</h2>
+                        <p>Python é uma linguagem de programação de alto nível, interpretada por script, imperativa, orientada à objetos,
+                            funcional, de tipagem dinâmica e forte. A linguagem foi projetada com a filosofia de enfatizar a 
+                        importância do esforço do programador sobre o esforço computacional. Prioriza a legibilidade do código, 
+                    sobre a velocidade ou expressividade  </p>
+                        <a href="https://www.python.org/"><img class="img-fluid"  url="" src="{{url_for('static', filename='assets/img/python-certificado-pi.jpg')}}" /></a>
+                        <p>
+                            <hr>
+                        <h2 class="section-heading">Django | Django Rest</h2>
+                        <p>Django é um framework para desenvolvimento rápido para web, escrito em python, e que utiliza 
+                        o padrão model/template/view(MTV).
+                        </p>
+                     <p>Tem como principais caracteristicas: 
+                     </p>
+                     <p>Mapeamento relacional de objetos; onde definimos a modelagem de dados através de classes em python.</p>
+                     <p>Interface administrativa, formulários, sistema de templates, sistema de cache, internacionalização, etc.</p>
+                        <a href="https://docs.djangoproject.com/en/4.1/"><img class="img-fluid"  url="" src="{{url_for('static', filename='assets/img/django-certificado-lom.jpg')}}" /></a>
+                        <hr>
+                        <a href="https://docs.djangoproject.com/en/4.1/"><img class="img-fluid"  url="" src="{{url_for('static', filename='assets/img/django-certificado-geek.jpg')}}" /></a>
+   
+                        <hr>
+                        <br>
+                        <h2 class="section-heading">Flask</h2>
+                        <p>Flask é um framework web escrito em python. É classificado como microframework porque não requer ferramentas
+                            ou bibliotecas particulares, mantendo um núcleo simples, porém, extensível. </p>
+                        <a href="https://flask.palletsprojects.com/en/2.2.x/"><img class="img-fluid"  url="" src="{{url_for('static', filename='assets/img/flask-certificado-masterclass.jpg')}}" /></a>
+                        <p>
+                            <hr>
+                            <br>
+                            <h2 class="section-heading">Bancos de dados relacionais - SQL</h2>
+                            <p>Banco de dados relacional, é percebido pelo usuário como tabelas, ou mais formalmente, relações. </p>
+                            <h5>PostgreSQL</h5>
+                            <p>PostgreSQL é um sistema gerenciador de banco de dados objeto relacional.
+                                Hoje o PostgreSQL é um dos SGBDS (sistema gerenciador de banco de dados) de código aberto
+                                mais avançados, contando com recursos como: Consulta complexa, Chave estrangeira, Integridade transacional,
+                                 Controle de concorrência multi versão, etc.
+                            </p>
+                            <br>
+                            <h5>MySQL</h5>
+                            <p>O MySQL é um SGBD(Sistema de gerenciamento de banco de dados), que utiliza a linguagem SQL como interface.
+                                É atualmente um dos sistemas de gerenciamento de bancos de dados mais populares no mundo.
+                            </p>
+                            <a href="https://pt.wikipedia.org/wiki/Banco_de_dados_relacional"><img class="img-fluid"  url="" src="{{url_for('static', filename='assets/img/sql-certificado-fm.jpg')}}" /></a>
+                            <p>
+                            <hr>
+                            <h2 class="section-heading">Docker</h2>
+                            <p>Docker é um conjunto de produtos de plataforma como serviço, que usa virtualização de nível de sistema operacional
+                                para entregar softweare em pacotes chamados contêineres.
+                            Os contêineres são isolados uns dos outros, e agrupam seus próprios softweares, bibliotecas e arquivos configuração. </p>
+                            <h5>Docker compose</h5>
+                            <p>Docker compose é uma ferramenta para definir e executar aplicativos docker de vários contêineres. Com o compose,
+                                 usamos um arquivo YAML para configurar os serviços de nosso aplicativo.
+                                O compose funciona bem em todos os ambientes: produção, preparo, desenvolvimento, testes, bem como fluxos de trabalho
+                                de CI.
+                            </p>
+                            <a href="https://docs.docker.com/"><img class="img-fluid"  url="" src="{{url_for('static', filename='assets/img/docker-certificado-cod3r.jpg')}}" /></a>
+                            <p>
+                            <hr>
+                            <br>
+                            <h2 class="section-heading">Github</h2>
+                            <p>Github é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão.
+                                Ele permite que programadores, contribuam em projetos privados e/ou open source de qualquer lugar
+                            do mundo. É amplamente utilizado por programadores para divulgação de seus trabalhos ou para que outros
+                        programadores contribuam com o projeto, alem de prover fácil comunicação através de recursos que relatam problemas
+                    ou misturam repositórios remotos. </p>
+                            <a href="https://github.com/IgorStrauss"><img class="img-fluid"  url="" src="{{url_for('static', filename='assets/img/github-certificado-mb.jpg')}}" /></a>
+                            <hr>
+                            <p>
+                                Treinamentos em andamento:            
+                            </p>
+                            <p>Atualização python avançado</p>
+                            <p>fastAPI</p>
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>Javascript</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/igor-senna-a336bb181">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://instagram.com/marques_igor_dev?igshid=ZDdkNTZiNTM=">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/IgorStrauss">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Todos os direitos reservados &copy; Portfólio Marques Igor 2023.1</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
